@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnos</title>
+    <link rel="icon" href="../Assets/logo.jpg" type="image/icon type">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+</head>
+<body>
+
+    <!-- Navegador -->
+    <nav>
+        <div class="izquierda">
+            <img src="/Proyecto/Assets/logo.png" class="logo" alt="">
+            <div class="links-container">
+                <span href="../Principle-Page/index.html" id="nav-home">Home</span>
+                <span id="nav-groups">Groups</span>
+                <span href="" id="nav-students">Students</span> 
+            </div>
+        </div>
+        
+        <div class="derecha">
+            <span class="search-icon">
+                <i class="bi bi-search"></i>
+            </span>
+            <div class="navegador">
+                <form action="">
+                    <input class="navegador-input" type="text" placeholder="Search here...">
+                </form>
+            </div>
+            <div class="Encontrar">
+                <!-- <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                    <span class="nombre">Jorge Peña</span>
+                    <span class="edad">17</span>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="oscurecer active"></div>
+    <!-- Alumno Page -->
+    <div class="Alumno-Page">
+        <form class="form">
+        <span class="title">Registrar Alumno</span>
+        <label for="name" class="label">Nombre</label>
+        <input type="text" id="nombre" name="name" required="" class="input" autocomplete="off">
+        <label for="apellidos" class="label">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" required="" class="input" autocomplete="off">
+        <label for="edad" class="label">Edad</label>
+        <input type="number" id="edad" name="edad" required="" class="input" min="0" autocomplete="off">
+        <button type="button" class="submit" id="register">Register</button>
+      </form>
+
+
+ 
+        <div id="card-container">
+            <!-- <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                <span class="nombre">Esteban Sánchez</span>
+                <span class="edad">16</span>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                <span class="nombre">Santiago López</span>
+                <span class="edad">15</span>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                <span class="nombre">Nelson López</span>
+                <span class="edad">14</span>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                <span class="nombre">Jorge Peña</span>
+                <span class="edad">17</span>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                <span class="nombre">Renato Rueda</span>
+                <span class="edad">18</span>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                <span class="nombre">Carlos Alcocer</span>
+                <span class="edad">20</span> 
+            </div> -->
+            </div>
+    </div>
+
+    <!-- Grupos -->
+    <div class="Group-Page">
+        <div class="Group-cards">
+            <div class="Group-card matematicas">
+                <img src="https://p4.wallpaperbetter.com/wallpaper/330/785/205/equations-math-wallpaper-preview.jpg" alt="">
+                <h2>Matemáticas</h2>
+                <div class="matematicas-botones-container">
+                    <button class="asignar-matematicas"> Asignar Alumnos </button>
+                    <button class="buscar-alumno-nombre-matematicas">Buscar por nombre</button>
+                    <button class="buscar-alumno-apellido-matematicas">Buscar por apellido</button>
+                    <button class="promedio-grupo-matematicas">Obtener promedio grupal</button>
+                    <button class="lista-alumnos-matematicas">Lista de alumnos</button>
+                </div>
+                <!-- Eventos Matemáticas -->
+                <!-- Asignar -->
+                <div class="evento-asignar-matematicas">
+                    <label for="name">Nombre del Alumno</label>
+                    <div class="asignar-input-matematicas">
+                        <input autocomplete="off" type="text" placeholder="Nombre del alumno..." name="name" class="input-matematicas">
+                      </div>
+                      <button class="asignar-regresar-matematicas">Regresar</button>
+                      <div class="alumnos-matematicas">
+                        <div class="matematicas-alumnos-container">
+                            <!-- <div class="alumnos-matematicas-card">
+                                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                                <span class="matematicas-card-nombre">Esteban</span>
+                                <span class="matematicas-card-edad">18</span>
+                            </div>  -->
+                        </div>
+                      </div>
+                </div>
+                <!-- Buscar por nombre -->
+                <div class="evento-buscar-nombre-alumno-matematicas">
+                    <label for="nombre">Nombre del Alumno</label>
+                    <div class="buscar-nombre-input-matematicas">
+                        <input type="text" placeholder="Buscar por nombre..." name="nombre" class="buscar-por-nombre-input-matematicas" autocomplete="off">
+                    </div>
+                    <button class="buscar-nombre-alumno-regresar-matematicas">Regresar</button>
+                </div>
+                <div class="alumnos-matematicas-buscar">
+                    <div class="matematicas-alumnos-buscar-container">
+                        <!-- <div class="alumnos-buscar-matematicas-card">
+                            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                            <span class="matematicas-card-buscar-nombre">Esteban</span>
+                        <div class="calificaciones-matematicas-container">
+                            <input type="number" min="0" max="10" class="calificaciones-matematicas-input">
+                            <button class="calificaciones-matematicas-button">Subir Calificación</button>
+                        </div>
+                        </div> -->
+                    </div>
+                  </div>
+                <!-- Buscar por apellido -->
+                <div class="evento-buscar-apellido-alumno-matematicas">
+                    <label for="apellido">Nombre del Alumno</label>
+                    <div class="buscar-apellido-input-matematicas">
+                        <input type="text" placeholder="Buscar por apellido..." name="apellido" class="buscar-por-apellido-input-matematicas" autocomplete="off">
+                    </div>
+                    <button class="buscar-apellido-alumno-regresar-matematicas">Regresar</button>
+                </div>
+                    <div class="alumnos-matematicas-buscar-apellidos">
+                        <div class="matematicas-alumnos-buscar-container-apellidos">
+                            <!-- <div class="alumnos-buscar-matematicas-card">
+                                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                                <span class="matematicas-card-buscar-nombre">Esteban</span>
+                            <div class="calificaciones-matematicas-container">
+                                <input type="number" min="0" max="10" class="calificaciones-matematicas-input">
+                                <button class="calificaciones-matematicas-button">Subir Calificación</button>
+                            </div>
+                            </div> -->
+                        </div>
+                  </div>
+
+                <!-- Obtener promedio grupal -->
+                <div class="evento-obtener-promedio-matematicas">
+
+                    <button class="promedio-regresar-matematicas">Regresar</button> 
+                </div>
+                <!-- Lista de alumnos -->
+                <div class="evento-lista-matematicas">
+                        <button class="lista-regresar-matematicas">Regresar</button>
+                </div>
+                
+            </div>
+            <div class="Group-card fisica">
+                <img src="https://p4.wallpaperbetter.com/wallpaper/153/67/642/physics-wallpaper-preview.jpg" alt="">
+                <h2>Física</h2>
+                <div class="fisica-botones-container">
+                    <button class="asignar-fisica"> Asignar Alumnos </button>
+                    <button class="buscar-alumno-nombre-fisica">Buscar por nombre</button>
+                    <button class="buscar-alumno-apellido-fisica">Buscar por apellido</button>
+                    <button class="promedio-grupo-fisica">Obtener promedio grupal</button>
+                    <button class="lista-alumnos-fisica">Lista de alumnos</button>
+                </div>
+                                <!-- Eventos fisica -->
+                <!-- Asignar -->
+                <div class="evento-asignar-fisica">
+                    <label for="name">Nombre del Alumno</label>
+                    <div class="asignar-input-fisica">
+                        <input type="text" placeholder="Nombre del alumno..." name="name" class="input-fisica" autocomplete="off">
+                      </div>
+                      <button class="asignar-regresar-fisica">Regresar</button>
+                      <div class="alumnos-fisica">
+                        <div class="fisica-alumnos-container">
+                            <!-- <div class="alumnos-fisica-card">
+                                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                                <span class="fisica-card-nombre">Esteban</span>
+                                <span class="fisica-card-edad">18</span>
+                            </div>  -->
+                        </div>
+                      </div>
+
+                </div>
+                <!-- Buscar por nombre -->
+                <div class="evento-buscar-nombre-alumno-fisica">
+                    <label for="nombre">Nombre del Alumno</label>
+                    <div class="buscar-nombre-input-fisica">
+                        <input type="text" placeholder="Buscar por nombre..." name="nombre" class="input-nombre-fisica" autocomplete="off">
+                    </div>
+                    <button class="buscar-nombre-alumno-regresar-fisica">Regresar</button>
+                    <div class="alumnos-fisica-buscar">
+                      </div>
+    
+                </div>
+                <div class="alumnos-fisica-buscar">
+                    <div class="fisica-alumnos-buscar-container">
+                        <!-- <div class="alumnos-buscar-fisica-card">
+                            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                            <span class="fisica-card-buscar-nombre">Esteban</span>
+                        <div class="calificaciones-fisica-container">
+                            <input type="number" min="0" max="10" class="calificaciones-fisica-input">
+                            <button class="calificaciones-fisica-button">Subir Calificación</button>
+                        </div>
+                        </div> -->
+                    </div>
+                  </div>
+                <!-- Buscar por apellido -->
+                <div class="evento-buscar-apellido-alumno-fisica">
+                    <label for="apellido">Nombre del Alumno</label>
+                    <div class="buscar-apellido-input-fisica">
+                        <input type="text" placeholder="Buscar por apellido..." name="apellido" class="input-apellido-fisica" autocomplete="off">
+                    </div>
+                    <button class="buscar-apellido-alumno-regresar-fisica">Regresar</button>
+                </div>
+                <div class="alumnos-fisica-buscar-apellidos">
+                    <div class="fisica-alumnos-buscar-container-apellidos">
+                        <!-- <div class="alumnos-buscar-fisica-card">
+                            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                            <span class="fisica-card-buscar-nombre">Esteban</span>
+                        <div class="calificaciones-fisica-container">
+                            <input type="number" min="0" max="10" class="calificaciones-fisica-input">
+                            <button class="calificaciones-fisica-button">Subir Calificación</button>
+                        </div>
+                        </div> -->
+                    </div>
+              </div>
+
+                <!-- Obtener promedio grupal -->
+                <div class="evento-obtener-promedio-fisica">
+                    <!-- <h2>Promedio Grupal</h2>
+                    <h1>10</h1> -->
+                    <button class="promedio-regresar-fisica">Regresar</button>
+                </div>
+                <!-- Lista de alumnos -->
+                <div class="evento-lista-fisica">
+                    <!-- <div class="lista-fisica-card">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                        <span class="fisica-nombre">Esteban Sánchez</span>
+                        <span class="fisica-edad">16</span>
+                        </div> -->
+                        <button class="lista-regresar-fisica">Regresar</button>
+                </div>
+
+            </div>
+            <div class="Group-card literatura">
+                <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGl0ZXJhdHVyYXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="">
+                <h2>Literatura</h2>
+                <div class="literatura-botones-container">
+                    <button class="asignar-literatura"> Asignar Alumnos </button>
+                    <button class="buscar-alumno-nombre-literatura">Buscar por nombre</button>
+                    <button class="buscar-alumno-apellido-literatura">Buscar por apellido</button>
+                    <button class="promedio-grupo-literatura">Obtener promedio grupal</button>
+                    <button class="lista-alumnos-literatura">Lista de alumnos</button>
+                </div>
+                                                <!-- Eventos literatura -->
+                <!-- Asignar -->
+                <div class="evento-asignar-literatura">
+                    <label for="name">Nombre del Alumno</label>
+                    <div class="asignar-input-literatura">
+                        <input type="text" placeholder="Nombre del alumno..." name="name" class="input-literatura" autocomplete="off">
+                      </div>
+                      <button class="asignar-regresar-literatura">Regresar</button>
+                      <div class="alumnos-literatura">
+                        <div class="literatura-alumnos-container">
+                            <!-- <div class="alumnos-literatura-card">
+                                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                                <span class="literatura-card-nombre">Esteban</span>
+                                <span class="literatura-card-edad">18</span>
+                            </div>  -->
+                        </div>
+                      </div>
+                </div>
+                <!-- Buscar por nombre -->
+                <div class="evento-buscar-nombre-alumno-literatura">
+                    <label for="nombre">Nombre del Alumno</label>
+                    <div class="buscar-nombre-input-literatura">
+                        <input type="text" placeholder="Buscar por nombre..." name="nombre" class="input-nombre-literatura" autocomplete="off">
+                    </div>
+                    <button class="buscar-nombre-alumno-regresar-literatura">Regresar</button>
+                                <div class="alumnos-literatura-buscar">
+                    <div class="literatura-alumnos-buscar-container">
+                        <!-- <div class="alumnos-buscar-literatura-card">
+                            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                            <span class="literatura-card-buscar-nombre">Esteban</span>
+                        <div class="calificaciones-literatura-container">
+                            <input type="number" min="0" max="10" class="calificaciones-literatura-input">
+                            <button class="calificaciones-literatura-button">Subir Calificación</button>
+                        </div>
+                        </div> -->
+                    </div>
+                  </div></div>
+
+
+                <!-- Buscar por apellido -->
+                <div class="evento-buscar-apellido-alumno-literatura">
+                    <label for="apellido">Nombre del Alumno</label>
+                    <div class="buscar-apellido-input-literatura">
+                        <input type="text" placeholder="Buscar por apellido..." name="apellido" class="input-apellido-literatura" autocomplete="off">
+                    </div>
+                    <button class="buscar-apellido-alumno-regresar-literatura">Regresar</button>
+                </div> 
+                <div class="alumnos-literatura-buscar-apellidos">
+                <div class="literatura-alumnos-buscar-container-apellidos">
+                    <!-- <div class="alumnos-buscar-literatura-card">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                        <span class="literatura-card-buscar-nombre">Esteban</span>
+                    <div class="calificaciones-literatura-container">
+                        <input type="number" min="0" max="10" class="calificaciones-literatura-input">
+                        <button class="calificaciones-literatura-button">Subir Calificación</button>
+                    </div>
+                    </div> -->
+
+            </div> </div>
+
+           
+
+
+                <!-- Obtener promedio grupal -->
+                <div class="evento-obtener-promedio-literatura">
+                    <!-- <h2>Promedio Grupal</h2>
+                    <h1>10</h1> -->
+                    <button class="promedio-regresar-literatura">Regresar</button>
+                </div>
+                <!-- Lista de alumnos -->
+                <div class="evento-lista-literatura">
+                    <!-- <div class="lista-literatura-card">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                        <span class="literatura-nombre">Esteban Sánchez</span>
+                        <span class="literatura-edad">16</span>
+                        </div> -->
+                        <button class="lista-regresar-literatura">Regresar</button>
+               
+
+            </div>            </div>
+            <div class="Group-card tecnologia">
+                <img src="https://img.freepik.com/foto-gratis/robot-casero-escritorio_23-2148863420.jpg" alt="">
+                <h2>Tecnología</h2>
+                <div class="tecnologia-botones-container">
+                    <button class="asignar-tecnologia"> Asignar Alumnos </button>
+                    <button class="buscar-alumno-nombre-tecnologia">Buscar por nombre</button>
+                    <button class="buscar-alumno-apellido-tecnologia">Buscar por apellido</button>
+                    <button class="promedio-grupo-tecnologia">Obtener promedio grupal</button>
+                    <button class="lista-alumnos-tecnologia">Lista de alumnos</button>
+                </div>
+                                                                <!-- Eventos tecnologia -->
+                <!-- Asignar -->
+                <div class="evento-asignar-tecnologia">
+                    <label for="name">Nombre del Alumno</label>
+                    <div class="asignar-input-tecnologia">
+                        <input type="text" placeholder="Nombre del alumno..." name="name" class="input-tecnologia" autocomplete="off">
+                      </div>
+                      <button class="asignar-regresar-tecnologia">Regresar</button>
+                      <div class="alumnos-tecnologia">
+                        <div class="tecnologia-alumnos-container">
+                            <!-- <div class="alumnos-tecnologia-card">
+                                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                                <span class="tecnologia-card-nombre">Esteban</span>
+                                <span class="tecnologia-card-edad">18</span>
+                            </div>  -->
+                        </div>
+                      </div>
+                </div>
+                <!-- Buscar por nombre -->
+                <div class="evento-buscar-nombre-alumno-tecnologia">
+                    <label for="nombre">Nombre del Alumno</label>
+                    <div class="buscar-nombre-input-tecnologia">
+                        <input type="text" placeholder="Buscar por nombre..." name="nombre" class="input-nombre-tecnologia" autocomplete="off">
+                    </div>
+                    <button class="buscar-nombre-alumno-regresar-tecnologia">Regresar</button>
+                               <div class="alumnos-tecnologia-buscar">
+                    <div class="tecnologia-alumnos-buscar-container">
+                        <!-- <div class="alumnos-buscar-tecnologia-card">
+                            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                            <span class="tecnologia-card-buscar-nombre">Esteban</span>
+                        <div class="calificaciones-tecnologia-container">
+                            <input type="number" min="0" max="10" class="calificaciones-tecnologia-input">
+                            <button class="calificaciones-tecnologia-button">Subir Calificación</button>
+                        </div>
+                        </div> -->
+                    </div>
+                  </div> </div>
+
+
+                <!-- Buscar por apellido -->
+                <div class="evento-buscar-apellido-alumno-tecnologia">
+                    <label for="apellido">Nombre del Alumno</label>
+                    <div class="buscar-apellido-input-tecnologia">
+                        <input type="text" placeholder="Buscar por apellido..." name="apellido" class="input-apellido-tecnologia">
+                    </div>
+                    <button class="buscar-apellido-alumno-regresar-tecnologia">Regresar</button>
+                                <div class="alumnos-tecnologia-buscar-apellidos">
+                    <div class="tecnologia-alumnos-buscar-container-apellidos">
+                        <!-- <div class="alumnos-buscar-tecnologia-card">
+                            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                            <span class="tecnologia-card-buscar-nombre">Esteban</span>
+                        <div class="calificaciones-tecnologia-container">
+                            <input type="number" min="0" max="10" class="calificaciones-tecnologia-input">
+                            <button class="calificaciones-tecnologia-button">Subir Calificación</button>
+                        </div>
+                        </div> -->
+                    </div>
+              </div></div>
+
+    
+                <!-- Obtener promedio grupal -->
+                <div class="evento-obtener-promedio-tecnologia">
+                    <!-- <h2>Promedio Grupal</h2>
+                    <h1>10</h1> -->
+                    <button class="promedio-regresar-tecnologia">Regresar</button>
+                </div>
+                <!-- Lista de alumnos -->
+                <div class="evento-lista-tecnologia">
+                    <!-- <div class="lista-tecnologia-card">
+                        <! <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                        <span class="tecnologia-nombre">Esteban Sánchez</span>
+                        <span class="tecnologia-edad">16</span>
+                        </div> -->
+                      <button class="lista-regresar-tecnologia">Regresar</button> 
+                </div> 
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</main>
+
+
+<script type="module" src="./index.mjs"></script>
+<script type="module" src="./alumnos.mjs"> </script>
+</body>
+</html>
